@@ -6,7 +6,7 @@
 /*   By: cisis <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/03 12:35:50 by cisis             #+#    #+#             */
-/*   Updated: 2020/11/06 11:50:37 by cisis            ###   ########.fr       */
+/*   Updated: 2020/11/06 18:19:00 by cisis            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,7 +44,7 @@ static char			*get_word(char const *s, char c)
 	while (s[len] != c)
 		len += 1;
 	word = (char*)malloc((len + 1) * sizeof(char));
-	while (s && *s != c)
+	while (*s && *s != c)
 	{
 		word[i] = *s++;
 		i++;
