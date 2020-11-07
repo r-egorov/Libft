@@ -6,7 +6,7 @@
 /*   By: cisis <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/05 10:06:18 by cisis             #+#    #+#             */
-/*   Updated: 2020/11/07 14:03:29 by cisis            ###   ########.fr       */
+/*   Updated: 2020/11/07 17:55:51 by cisis            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,7 +35,7 @@ static unsigned int	ft_numlen(int n)
 	return (numlen);
 }
 
-char			*ft_itoa(int n)
+char				*ft_itoa(int n)
 {
 	char			*res;
 	char			*last;
