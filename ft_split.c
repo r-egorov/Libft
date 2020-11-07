@@ -41,7 +41,7 @@ static char			*get_word(char const *s, char c)
 
 	len = 0;
 	i = 0;
-	while (s[len] != c)
+	while (s[len] && s[len] != c)
 		len += 1;
 	word = (char*)malloc((len + 1) * sizeof(char));
 	while (*s && *s != c)
@@ -81,14 +81,14 @@ char				**ft_split(char const *s, char c)
 		return (NULL);
 	while (i < word_count)
 	{
-		while (s && *s == c)
+		while (*s && *s == c)
 			s++;
-		if (s && *s != c)
+		if (*s && *s != c)
 		{
 			if (!(res[i] = get_word(s, c)))
 				return (free_strstab(res, i));
 			i++;
-			while (s && *s != c)
+			while (*s && *s != c)
 				s++;
 		}
 	}
