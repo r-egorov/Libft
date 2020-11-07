@@ -6,13 +6,13 @@
 /*   By: cisis <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/05 10:06:18 by cisis             #+#    #+#             */
-/*   Updated: 2020/11/06 11:19:20 by cisis            ###   ########.fr       */
+/*   Updated: 2020/11/07 14:03:29 by cisis            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static int	ft_numlen(int n)
+static unsigned int	ft_numlen(int n)
 {
 	unsigned int	val;
 	unsigned int	numlen;
@@ -35,18 +35,18 @@ static int	ft_numlen(int n)
 	return (numlen);
 }
 
-char		*ft_itoa(int n)
+char			*ft_itoa(int n)
 {
 	char			*res;
 	char			*last;
 	unsigned int	val;
 	unsigned int	numlen;
 
+	if (n == 0)
+		return (ft_strdup("0"));
 	numlen = ft_numlen(n);
 	if (!(res = (char*)malloc((numlen + 1) * sizeof(char))))
 		return (NULL);
-	if (n == 0)
-		return (ft_strdup("0"));
 	else if (n < 0)
 	{
 		*res = '-';
@@ -58,7 +58,7 @@ char		*ft_itoa(int n)
 	*last = '\0';
 	while (val > 0)
 	{
-		*--last = (val % 10) + '0';
+		*--last = (char)((val % 10) + '0');
 		val = val / 10;
 	}
 	return (res);
