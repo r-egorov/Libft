@@ -2,51 +2,53 @@ NAME			=	libft.a
 
 INCLUDES		=	./
 
-SRCS			=	ft_strlen.c \
-				   	ft_memset.c  \
-					ft_bzero.c  \
-					ft_memcpy.c  \
-					ft_memmove.c  \
-					ft_memchr.c  \
-					ft_memccpy.c  \
-					ft_memcmp.c  \
-					ft_strlcpy.c  \
-					ft_strlcat.c  \
-					ft_strchr.c  \
-					ft_strrchr.c  \
-					ft_strncmp.c  \
-					ft_atoi.c  \
-					ft_strnstr.c  \
-					ft_isalpha.c  \
-					ft_isdigit.c  \
-					ft_isalnum.c  \
-					ft_isascii.c  \
-					ft_isprint.c  \
-					ft_tolower.c  \
-					ft_toupper.c  \
-					ft_calloc.c \
-					ft_strdup.c \
-					ft_substr.c \
-					ft_split.c \
-					ft_strjoin.c \
-					ft_strtrim.c \
-					ft_itoa.c \
-					ft_strmapi.c \
-					ft_putchar_fd.c \
-					ft_putstr_fd.c \
-					ft_putendl_fd.c \
-					ft_putnbr_fd.c
+SRCSDIR			=	srcs/
+
+SRCS			=	$(SRCSDIR)ft_strlen.c \
+				   	$(SRCSDIR)ft_memset.c  \
+					$(SRCSDIR)ft_bzero.c  \
+					$(SRCSDIR)ft_memcpy.c  \
+					$(SRCSDIR)ft_memmove.c  \
+					$(SRCSDIR)ft_memchr.c  \
+					$(SRCSDIR)ft_memccpy.c  \
+					$(SRCSDIR)ft_memcmp.c  \
+					$(SRCSDIR)ft_strlcpy.c  \
+					$(SRCSDIR)ft_strlcat.c  \
+					$(SRCSDIR)ft_strchr.c  \
+					$(SRCSDIR)ft_strrchr.c  \
+					$(SRCSDIR)ft_strncmp.c  \
+					$(SRCSDIR)ft_atoi.c  \
+					$(SRCSDIR)ft_strnstr.c  \
+					$(SRCSDIR)ft_isalpha.c  \
+					$(SRCSDIR)ft_isdigit.c  \
+					$(SRCSDIR)ft_isalnum.c  \
+					$(SRCSDIR)ft_isascii.c  \
+					$(SRCSDIR)ft_isprint.c  \
+					$(SRCSDIR)ft_tolower.c  \
+					$(SRCSDIR)ft_toupper.c  \
+					$(SRCSDIR)ft_calloc.c \
+					$(SRCSDIR)ft_strdup.c \
+					$(SRCSDIR)ft_substr.c \
+					$(SRCSDIR)ft_split.c \
+					$(SRCSDIR)ft_strjoin.c \
+					$(SRCSDIR)ft_strtrim.c \
+					$(SRCSDIR)ft_itoa.c \
+					$(SRCSDIR)ft_strmapi.c \
+					$(SRCSDIR)ft_putchar_fd.c \
+					$(SRCSDIR)ft_putstr_fd.c \
+					$(SRCSDIR)ft_putendl_fd.c \
+					$(SRCSDIR)ft_putnbr_fd.c
 
 SRCS_BONUS		=	$(SRCS) \
-					ft_lstnew.c \
-					ft_lstadd_front.c \
-					ft_lstsize.c \
-					ft_lstlast.c \
-					ft_lstadd_back.c \
-					ft_lstdelone.c \
-					ft_lstclear.c \
-					ft_lstiter.c \
-					ft_lstmap.c
+					$(SRCSDIR)ft_lstnew.c \
+					$(SRCSDIR)ft_lstadd_front.c \
+					$(SRCSDIR)ft_lstsize.c \
+					$(SRCSDIR)ft_lstlast.c \
+					$(SRCSDIR)ft_lstadd_back.c \
+					$(SRCSDIR)ft_lstdelone.c \
+					$(SRCSDIR)ft_lstclear.c \
+					$(SRCSDIR)ft_lstiter.c \
+					$(SRCSDIR)ft_lstmap.c
 
 OBJS			=	$(SRCS:.c=.o)
 
