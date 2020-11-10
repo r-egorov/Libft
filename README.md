@@ -1,7 +1,7 @@
 # Libft
 The very first School 42 project, which is students' own implementation of the system's library functions.
 
-##Libc functions
+## Libc functions
 
 * [ft_atoi](https://github.com/r-egorov/libft/blob/master/ft_atoi.c)
 * [ft_bzero](https://github.com/r-egorov/libft/blob/master/ft_bzero.c)
