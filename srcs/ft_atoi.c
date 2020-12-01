@@ -6,7 +6,7 @@
 /*   By: cisis <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/01 18:27:12 by cisis             #+#    #+#             */
-/*   Updated: 2020/11/01 20:03:40 by cisis            ###   ########.fr       */
+/*   Updated: 2020/12/01 15:18:05 by cisis            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,10 +42,6 @@ int			ft_atoi(const char *nptr)
 	while ((nptr[i] >= 48) && (nptr[i] <= 57))
 	{
 		res = 10 * res + ((unsigned char)nptr[i] - '0');
-		if ((res > 9223372036854775806) && (sign > 0))
-			return (-1);
-		if ((res > 9223372036854775807) && (sign < 0))
-			return (0);
 		i++;
 	}
 	return ((int)(res * sign));
