@@ -24,7 +24,7 @@ SRCS			=	$(SRCSDIR)ft_strlen.c		$(SRCSDIR)ft_memset.c  \
 					$(SRCSDIR)ft_lstsize.c		$(SRCSDIR)ft_lstlast.c \
 					$(SRCSDIR)ft_lstadd_back.c	$(SRCSDIR)ft_lstdelone.c \
 					$(SRCSDIR)ft_lstclear.c 	$(SRCSDIR)ft_lstiter.c \
-					$(SRCSDIR)ft_lstmap.c		$(SRCSDIR)ft_itoa_base.c
+					$(SRCSDIR)ft_lstmap.c		$(SRCSDIR)ft_lutoa_base.c
 
 OBJS			=	$(patsubst %.c,%.o,$(SRCS))
 

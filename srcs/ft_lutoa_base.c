@@ -6,7 +6,7 @@
 /*   By: cisis <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/04 17:45:35 by cisis             #+#    #+#             */
-/*   Updated: 2020/12/08 14:02:52 by cisis            ###   ########.fr       */
+/*   Updated: 2020/12/08 14:33:52 by cisis            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,7 +28,7 @@ static void	fill_the_tab(char **tab, int *remainders, const char *base,
 	res[i] = '\0';
 }
 
-char		*ft_itoa_base(unsigned long nbr, const char *base)
+char		*ft_lutoa_base(unsigned long nbr, const char *base)
 {
 	int					base_len;
 	int					remainders[64];
