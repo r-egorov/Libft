@@ -6,7 +6,7 @@
 /*   By: cisis <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/10/30 11:16:15 by cisis             #+#    #+#             */
-/*   Updated: 2020/10/31 23:05:16 by cisis            ###   ########.fr       */
+/*   Updated: 2021/05/13 12:50:37 by cisis            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ void	ft_bzero(void *s, size_t len)
 {
 	unsigned char	*res;
 
-	res = (unsigned char*)s;
+	res = (unsigned char *)s;
 	while (len > 0)
 	{
 		res[len - 1] = '\0';

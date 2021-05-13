@@ -6,7 +6,7 @@
 /*   By: cisis <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/10/30 11:16:15 by cisis             #+#    #+#             */
-/*   Updated: 2020/10/30 11:34:31 by cisis            ###   ########.fr       */
+/*   Updated: 2021/05/13 13:05:49 by cisis            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ void	*ft_memset(void *b, int c, size_t len)
 {
 	unsigned char	*res;
 
-	res = (unsigned char*)b;
+	res = (unsigned char *)b;
 	while (len > 0)
 	{
 		res[len - 1] = c;

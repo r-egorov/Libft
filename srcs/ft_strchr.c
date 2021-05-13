@@ -6,7 +6,7 @@
 /*   By: cisis <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/10/30 14:39:35 by cisis             #+#    #+#             */
-/*   Updated: 2020/11/01 18:52:25 by cisis            ###   ########.fr       */
+/*   Updated: 2021/05/13 13:23:31 by cisis            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ char	*ft_strchr(const char *s, int c)
 	char			*str;
 
 	chr = (unsigned char)c;
-	str = (char*)s;
+	str = (char *)s;
 	while ((str) || (*str == '\0'))
 	{
 		if (*str == chr)

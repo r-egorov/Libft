@@ -6,7 +6,7 @@
 /*   By: cisis <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/03 15:14:02 by cisis             #+#    #+#             */
-/*   Updated: 2020/11/03 15:50:31 by cisis            ###   ########.fr       */
+/*   Updated: 2021/05/13 13:23:51 by cisis            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	s1len = ft_strlen(s1);
 	s2len = ft_strlen(s2);
 	len = s1len + s2len;
-	res = (char*)malloc((len + 1) * sizeof(char));
+	res = (char *)malloc((len + 1) * sizeof(char));
 	if (!res)
 		return (NULL);
 	ft_strlcpy(res, s1, s1len + 1);

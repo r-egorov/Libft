@@ -6,7 +6,7 @@
 /*   By: cisis <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/05 11:07:09 by cisis             #+#    #+#             */
-/*   Updated: 2020/11/05 11:12:18 by cisis            ###   ########.fr       */
+/*   Updated: 2021/05/13 13:06:27 by cisis            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 void	ft_putnbr_fd(int n, int fd)
 {
-	unsigned int val;
+	unsigned int	val;
 
 	if (n < 0)
 	{

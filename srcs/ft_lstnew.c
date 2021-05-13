@@ -6,7 +6,7 @@
 /*   By: cisis <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/06 12:11:56 by cisis             #+#    #+#             */
-/*   Updated: 2020/11/06 12:14:53 by cisis            ###   ########.fr       */
+/*   Updated: 2021/05/13 13:03:31 by cisis            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,8 @@ t_list	*ft_lstnew(void *content)
 {
 	t_list	*res;
 
-	if (!(res = (t_list*)malloc(sizeof(t_list))))
+	res = (t_list *)malloc(sizeof(t_list));
+	if (!res)
 		return (NULL);
 	res->content = content;
 	res->next = NULL;

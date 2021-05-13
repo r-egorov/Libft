@@ -6,7 +6,7 @@
 /*   By: cisis <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/02 00:56:02 by cisis             #+#    #+#             */
-/*   Updated: 2020/11/02 12:34:57 by cisis            ###   ########.fr       */
+/*   Updated: 2021/05/13 13:26:14 by cisis            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,14 +19,14 @@ char	*ft_strnstr(const char *big, const char *little, size_t len)
 
 	i = 0;
 	if (!little[0])
-		return ((char*)&big[0]);
+		return ((char *)&big[0]);
 	while (big[i] && (i < len))
 	{
 		k = 0;
 		while ((big[i + k] == little[k]) && ((i + k) < len) && little[k])
 			k++;
 		if (little[k] == '\0')
-			return ((char*)&big[i]);
+			return ((char *)&big[i]);
 		i++;
 	}
 	return (NULL);
